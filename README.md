@@ -1,5 +1,5 @@
 <!-- badges: start -->
-[![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IdoBar/6003ESC_Workshop1/master?urlpath=rstudio)
+[![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IdoBar/6003ESC_Workshop1/main?urlpath=rstudio)
 <!-- badges: end -->
 
 # Scientific Data Analysis Workshop1 (Binder-ready)
