@@ -21,6 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 figs <- captioner(prefix="Figure")
 tbls <- captioner(prefix="Table")
 figs(name="ecocloud_dash", "EcoCloud dashboard screenshot.")
+figs(name="binder", "Binder launch screenshot.")
 figs(name="jupyter_dash", "Jupyter dashboard screenshot.")
 figs(name="rstudio_project", "Create a new project in RStudio screenshots.")
 figs(name="tidyverse_workflow", "An example of a data analysis workflow using packages from the Tidyverse (credit to [The Centre for Statistics in Ecology, the Environment and Conservation, University of Cape Town](http://www.seec.uct.ac.za/r-tidyverse)).")
@@ -66,12 +67,17 @@ See the appendix for more details how you can run R and RStudio on [EcoCloud](ht
 
 #### Running R and RStudio on Binder
 Using Binder is as simple as clicking on the Binder badge - [![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IdoBar/6003ESC_Workshop1/main?urlpath=rstudio).  
-Alternatively, you can navigating to the [GitHub repository](https://github.com/IdoBar/6003ESC_Workshop1.git) of this tutorial (or any other Binder-ready projects) and click on the Binder badge.
+Alternatively, you can navigate to the [Binder](https://mybinder.org/) homepage and enter the URL of this tutorial [GitHub repository](https://github.com/IdoBar/6003ESC_Workshop1.git) `https://github.com/IdoBar/6003ESC_Workshop1.git` and click on the **launch** buton (see screenshot in `r figs(name="binder",display="cite")` below).
+ 
+```{r binder, echo=FALSE, fig.cap=figs(name="binder"), out.width = '100%'}
+knitr::include_graphics("figs/Screenshot_The_Binder_Project.png")
+```
 
-You should see now an RStudio interface in your web browser and are now ready to start working in R in "The Cloud"! `r  fa_cloud(colour = "#5599FF")``r  fa_cloud(colour = "#5599FF")``r  fa_cloud(colour = "#5599FF")`
+Now be patient while the environment is loading...  
+You should now see in your web browser an RStudio interface (if you got to the Jupyter page, click on new --> RStudio) and are should be ready to start working in R in "The Cloud"! `r  fa_cloud(colour = "#5599FF")``r  fa_cloud(colour = "#5599FF")``r  fa_cloud(colour = "#5599FF")`
 
 ### Installing R and RStudio locally
-Both R and RStudio can be installed locally on any operating system (`r  fa_apple()`, `r  fa_windows(colour = "#5599FF")`, or `r  fa_linux()`, see a [detailed tutorial](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu%20)), which provides complete control over the installation, added packages and can be used anywhere without requiring internet connection.
+Alternatively, both R and RStudio can be installed locally on any operating system (`r  fa_apple()`, `r  fa_windows(colour = "#5599FF")`, or `r  fa_linux()`, see a [detailed tutorial](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu%20)), which provides complete control over the installation, added packages and can be used anywhere without requiring internet connection. This is recommended for anyone who is planning to do any future serious analysis in R (including the assignments in this course).
 
 #### Project Management with RStudio
 
@@ -265,7 +271,7 @@ Please contact me at i.bar@griffith.edu.au for any questions or comments.
 knitr::include_graphics("https://camo.githubusercontent.com/a9c578c48fca929f0547aafdc6e21034e2f1952f/68747470733a2f2f692e696d6775722e636f6d2f477543757a79722e706e67")
 ```
 
-## Appendix - Running R and RStudio on EcoCloud
+### Appendix - Running R and RStudio on EcoCloud
 [EcoCloud](https://ecocloud.org.au/) platform that provides this service for all students and staff of participating Australian and NZ universities and government agencies (including Griffith University). A guide on using RStudio within EcoCloud is available [here](https://support.ecocloud.org.au/support/solutions/articles/6000200390-using-rstudio).
 
 >1. Please navigate to [EcoCloud](https://ecocloud.org.au/) and follow the prompts to login using your Griffith credentials (AAF login)  
