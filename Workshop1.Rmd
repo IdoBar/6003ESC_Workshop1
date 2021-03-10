@@ -16,6 +16,7 @@ output:
 
 ```{r setup, include=FALSE}
 pacman::p_load(htmltools, knitr, tidyverse, captioner, fontawesome)
+pacman::p_load_gh("gadenbuie/tweetrmd")
 # pacman::p_load_gh("mitchelloharawild/icons", update = FALSE)
 knitr::opts_chunk$set(echo = TRUE)
 # setup figure and table captions
@@ -38,7 +39,7 @@ figs(name="GOT_palette", "An example of a 'ggplot2' theme inspired by Game of Th
 
 ```{js logo-js, echo=FALSE}
 $(document).ready(function() {
-  $('#header').parent().prepend('<div id=\"Griffith logo\"><img src=\"figs/GRIFF_INT1_STD_RGB.png\" style=\"position:absolute; top:0; right:0; padding:20px; height:120px\"></div>');
+  $('#header').parent().prepend('<div id=\"Griffith logo\"><img src=\"https://www.griffith.edu.au/__data/assets/image/0018/653121/Griffith_Full_Logo_scaled.png\" style=\"position:absolute; top:0; right:0; padding:20px; height:120px\"></div>');
   $('#header').css('margin-right', '120px')
 });
 ```
@@ -262,16 +263,20 @@ Please contact me at i.bar@griffith.edu.au for any questions or comments.
 
 ## Additional Resources
 
+* R WTF: What They Forgot to tell you about R, tips and best practices for working in R ([link](https://rstats.wtf/))  
 * R for Reproducible Scientific Analysis: A Software Carpentry course -- https://swcarpentry.github.io/r-novice-gapminder/ (offered regularly here at GU, follow [\@hackyhourGU](https://twitter.com/hackyhourGU) on Twitter)  
 * From Data to Viz leads you to the most appropriate graph for your data -- https://www.data-to-viz.com/  
 * [Coding Club](https://ourcodingclub.github.io/): A Positive Peer-Learning Community (ecology and environmental science students and researchers from the University of Edinburgh) -- https://ourcodingclub.github.io/  
-* Beautiful plotting in R: A ggplot2 cheatsheet -- provides lots of recipes and easy fixes for common tasks when creating `ggplot2` plots [link](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)  
+* Beautiful plotting in R: A ggplot2 cheatsheet -- provides lots of recipes and easy fixes for common tasks when creating `ggplot2` plots [link](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)   
+* Plot anything with ggplot2 - [YouTube workshops](https://www.youtube.com/watch?v=h29g21z0a68)  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h29g21z0a68" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 * Useful cheatsheets can be found on the [RStudio Cheatsheets website](https://rstudio.com/resources/cheatsheets/) (start with the most useful/basic ones relevant to this course - RStudio IDE, Data Import, Data Transformation and Data Visualization)  
-* [paletteer](https://github.com/EmilHvitfeldt/paletteer) -- An R package that let's you use colour palette from a range of available packages (see examples of available palettes [here](https://github.com/EmilHvitfeldt/r-color-palettes) and you can even use [TV-themed palettes](https://github.com/Ryo-N7/tvthemes), such as the example below from GOT) 
+* [paletteer](https://github.com/EmilHvitfeldt/paletteer) -- An R package that let's you use colour palette from a huge range of available packages (see examples of available palettes [here](https://github.com/EmilHvitfeldt/r-color-palettes) and you can even use [TV-themed palettes](https://github.com/Ryo-N7/tvthemes)) 
 
-```{r GOT_palette, echo=FALSE, fig.cap=figs(name="GOT_palette"), out.width = '80%'}
-knitr::include_graphics("https://camo.githubusercontent.com/a9c578c48fca929f0547aafdc6e21034e2f1952f/68747470733a2f2f692e696d6775722e636f6d2f477543757a79722e706e67")
+```{r bluey-tweet}
+include_tweet("https://twitter.com/DrIdoBar/status/1272919164252897286")
 ```
+
 
 
 
