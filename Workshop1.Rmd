@@ -69,8 +69,8 @@ We will use the [Binder](https://mybinder.org/) service, which is free, easy to 
 See the appendix for more details how you can run R and RStudio on [EcoCloud](https://ecocloud.org.au/), another cloud-based service free for Griffith students.
 
 #### Running R and RStudio on Binder
-Using Binder is as simple as clicking on the Binder badge - [![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IdoBar/6003ESC_Workshop1/main?urlpath=rstudio).  
-Alternatively, you can navigate to the [Binder](https://mybinder.org/) homepage and enter the URL of this tutorial [GitHub repository](https://github.com/IdoBar/6003ESC_Workshop1.git) `https://github.com/IdoBar/6003ESC_Workshop1.git` and click on the **launch** buton (see screenshot in `r figs(name="binder",display="cite")` below).
+Using Binder is as simple as clicking on the Binder badge - [![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IdoBar/6003ESC_Workshop1/main?urlpath=rstudio){target="_blank"}.  
+Alternatively, you can navigate to the [Binder](https://mybinder.org/){target="_blank"} homepage and enter the URL of this tutorial [GitHub repository](https://github.com/IdoBar/6003ESC_Workshop1.git){target="_blank"} `https://github.com/IdoBar/6003ESC_Workshop1.git` and click on the **launch** buton (see screenshot in `r figs(name="binder",display="cite")` below).
  
 ```{r binder, echo=FALSE, fig.cap=figs(name="binder"), out.width = '100%'}
 knitr::include_graphics("figs/Screenshot_The_Binder_Project.png")
@@ -89,7 +89,7 @@ knitr::include_graphics("figs/Rstudio_export_screenshot.png")
 
 
 ### Installing R and RStudio locally
-Alternatively, both R and RStudio can be installed locally on any operating system (`r  fa("apple")`, `r  fa("windows",  fill ="#5599FF")`, or `r  fa("linux", )`, see a [detailed tutorial](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu%20)), which provides complete control over the installation, added packages and can be used anywhere without requiring internet connection. This is recommended for anyone who is planning to do any future serious analysis in R (including the assignments in this course).
+Alternatively, both R and RStudio can be installed locally on any operating system (`r  fa("apple")`, `r  fa("windows",  fill ="#5599FF")`, or `r  fa("linux", )`, see a [detailed tutorial](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu%20){target="_blank"}), which provides complete control over the installation, added packages and can be used anywhere without requiring internet connection. This is recommended for anyone who is planning to do any future serious analysis in R (including the assignments in this course).
 
 #### Project Management with RStudio
 
@@ -108,9 +108,9 @@ knitr::include_graphics("figs/RStudio_create_project.png")
 
 
 ### Install Packages
-R can be extended with additional functionality by installing external packages (usually hosted at the Comprehensive R Archive Network repository -- [CRAN](https://cran.r-project.org/web/packages/index.html)). To find which packages can be useful for your type analysis, use search engine (Google is your friend) and the available [Task Views on CRAN](https://cran.r-project.org/web/views/), which provide some guidance which packages on CRAN are relevant for tasks related to a certain topic.  
-For our current analysis we will use some packages from the [tidyverse](https://www.tidyverse.org/) -- a suite of packages designed to assist in data analysis, from reading data from multiple source (`readr`, `readxl` packages), through data wrangling and cleanup (such as `dplyr`, `tidyr`) and finally visualisation (`ggplot2`), as can be seen in `r figs(name="tidyverse_workflow", display="cite")`.  
-_if tidyverse is failing to install then try [bplyr](https://github.com/yonicd/bplyr)_
+R can be extended with additional functionality by installing external packages (usually hosted at the Comprehensive R Archive Network repository -- [CRAN](https://cran.r-project.org/web/packages/index.html){target="_blank"}). To find which packages can be useful for your type analysis, use search engine (Google is your friend) and the available [Task Views on CRAN](https://cran.r-project.org/web/views/){target="_blank"}, which provide some guidance which packages on CRAN are relevant for tasks related to a certain topic.  
+For our current analysis we will use some packages from the [tidyverse](https://www.tidyverse.org/){target="_blank"} -- a suite of packages designed to assist in data analysis, from reading data from multiple source (`readr`, `readxl` packages), through data wrangling and cleanup (such as `dplyr`, `tidyr`) and finally visualisation (`ggplot2`), as can be seen in `r figs(name="tidyverse_workflow", display="cite")`.  
+_if tidyverse is failing to install then try [bplyr](https://github.com/yonicd/bplyr){target="_blank"}_
 
 ```{r tidyverse_wf, echo=FALSE, fig.cap=figs(name="tidyverse_workflow"), out.width = '80%'}
 knitr::include_graphics("figs/tidy_workflow.png")
@@ -162,7 +162,7 @@ summary(gapminder) # brief summary statistics
 ## Plotting Data
 
 We will use the `ggplot2` package, which stands for "Grammar of Graphics" and breaks up graphs into semantic components such as scales and layers that can be added to the plotting area, as can be seen in `r figs(name="ggplot2_layers", display="cite")`.  
-There are lots of online tutorials on the use of `ggplot2`, one of my favourites is the [Beautiful plotting in R: A ggplot2 cheatsheet](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/).  
+There are lots of online tutorials on the use of `ggplot2`, one of my favourites is the [Beautiful plotting in R: A ggplot2 cheatsheet](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/){target="_blank"}.  
 
 ```{r ggplot_layers, echo=FALSE, fig.cap=figs(name="ggplot2_layers"), out.width = '80%'}
 knitr::include_graphics("https://ourcodingclub.github.io/assets/img/tutorials/dataviz-beautification/DL_datavis1_layers.png")
@@ -273,15 +273,15 @@ Please contact me at i.bar@griffith.edu.au for any questions or comments.
 
 ## Additional Resources
 
-* R WTF: What They Forgot to tell you about R, tips and best practices for working in R ([link](https://rstats.wtf/))  
-* R for Reproducible Scientific Analysis: A Software Carpentry course -- https://swcarpentry.github.io/r-novice-gapminder/ (offered regularly here at GU, follow [\@hackyhourGU](https://twitter.com/hackyhourGU) on Twitter)  
+* R WTF: What They Forgot to tell you about R, tips and best practices for working in R ([link](https://rstats.wtf/){target="_blank"})  
+* R for Reproducible Scientific Analysis: A Software Carpentry course -- https://swcarpentry.github.io/r-novice-gapminder/ (offered regularly here at GU, follow [\@hackyhourGU](https://twitter.com/hackyhourGU){target="_blank"} on Twitter)  
 * From Data to Viz leads you to the most appropriate graph for your data -- https://www.data-to-viz.com/  
-* [Coding Club](https://ourcodingclub.github.io/): A Positive Peer-Learning Community (ecology and environmental science students and researchers from the University of Edinburgh) -- https://ourcodingclub.github.io/  
-* Beautiful plotting in R: A ggplot2 cheatsheet -- provides lots of recipes and easy fixes for common tasks when creating `ggplot2` plots [link](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)   
-* Plot anything with ggplot2 - [YouTube workshops](https://www.youtube.com/watch?v=h29g21z0a68)  
+* [Coding Club](https://ourcodingclub.github.io/){target="_blank"}: A Positive Peer-Learning Community (ecology and environmental science students and researchers from the University of Edinburgh) -- https://ourcodingclub.github.io/  
+* Beautiful plotting in R: A ggplot2 cheatsheet -- provides lots of recipes and easy fixes for common tasks when creating `ggplot2` plots [link](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/){target="_blank"}   
+* Plot anything with ggplot2 - [YouTube workshops](https://www.youtube.com/watch?v=h29g21z0a68){target="_blank"}  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h29g21z0a68" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-* Useful cheatsheets can be found on the [RStudio Cheatsheets website](https://rstudio.com/resources/cheatsheets/) (start with the most useful/basic ones relevant to this course - RStudio IDE, Data Import, Data Transformation and Data Visualization)  
-* [paletteer](https://github.com/EmilHvitfeldt/paletteer) -- An R package that let's you use colour palette from a huge range of available packages (see examples of available palettes [here](https://github.com/EmilHvitfeldt/r-color-palettes) and you can even use [TV-themed palettes](https://github.com/Ryo-N7/tvthemes)) 
+* Useful cheatsheets can be found on the [RStudio Cheatsheets website](https://rstudio.com/resources/cheatsheets/){target="_blank"} (start with the most useful/basic ones relevant to this course - RStudio IDE, Data Import, Data Transformation and Data Visualization)  
+* [paletteer](https://github.com/EmilHvitfeldt/paletteer){target="_blank"} -- An R package that let's you use colour palette from a huge range of available packages (see examples of available palettes [here](https://github.com/EmilHvitfeldt/r-color-palettes){target="_blank"} and you can even use [TV-themed palettes](https://github.com/Ryo-N7/tvthemes){target="_blank"}) 
 
 ```{r bluey-tweet}
 include_tweet("https://twitter.com/DrIdoBar/status/1272919164252897286")
@@ -291,9 +291,9 @@ include_tweet("https://twitter.com/DrIdoBar/status/1272919164252897286")
 
 
 ### Appendix - Running R and RStudio on EcoCloud
-[EcoCloud](https://ecocloud.org.au/) platform that provides this service for all students and staff of participating Australian and NZ universities and government agencies (including Griffith University). A guide on using RStudio within EcoCloud is available [here](https://support.ecocloud.org.au/support/solutions/articles/6000200390-using-rstudio).
+[EcoCloud](https://ecocloud.org.au/){target="_blank"} platform that provides this service for all students and staff of participating Australian and NZ universities and government agencies (including Griffith University). A guide on using RStudio within EcoCloud is available [here](https://support.ecocloud.org.au/support/solutions/articles/6000200390-using-rstudio){target="_blank"}.
 
->1. Please navigate to [EcoCloud](https://ecocloud.org.au/) and follow the prompts to login using your Griffith credentials (AAF login)  
+>1. Please navigate to [EcoCloud](https://ecocloud.org.au/){target="_blank"} and follow the prompts to login using your Griffith credentials (AAF login)  
 2. In your dashboard, click on the orange "Launch notebook server" button in the middle of the screen and select "Rstudio notebook" in the popup window and click on the green "Launch" button (see screenshot in `r figs(name="ecocloud_dash",display="cite")` below)  
 
 ```{r ecocloud_dash, echo=FALSE, fig.cap=figs(name="ecocloud_dash"), out.width = '80%'}
