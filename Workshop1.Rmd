@@ -18,12 +18,13 @@ output:
 pacman::p_load(htmltools, knitr, tidyverse, captioner, fontawesome)
 pacman::p_load_gh("gadenbuie/tweetrmd")
 # pacman::p_load_gh("mitchelloharawild/icons", update = FALSE)
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, fig.align='center')
 # setup figure and table captions
 figs <- captioner(prefix="Figure")
 tbls <- captioner(prefix="Table")
 figs(name="ecocloud_dash", "EcoCloud dashboard screenshot.")
 figs(name="binder", "Binder launch screenshot.")
+figs(name="binder_export", "Download files from Binder/RStudio screenshot.")
 figs(name="jupyter_dash", "Jupyter dashboard screenshot.")
 figs(name="rstudio_project", "Create a new project in RStudio screenshots.")
 figs(name="tidyverse_workflow", "An example of a data analysis workflow using packages from the Tidyverse (credit to [The Centre for Statistics in Ecology, the Environment and Conservation, University of Cape Town](http://www.seec.uct.ac.za/r-tidyverse)).")
@@ -76,7 +77,16 @@ knitr::include_graphics("figs/Screenshot_The_Binder_Project.png")
 ```
 
 Now be patient while the environment is loading...  
-You should now see in your web browser an RStudio interface (if you got to the Jupyter page, click on new --> RStudio) and are should be ready to start working in R in "The Cloud"! `r  fa("cloud", , fill ="#5599FF")``r  fa("cloud", , fill ="#5599FF")``r  fa("cloud", , fill ="#5599FF")`
+You should now see in your web browser an RStudio interface (if you got to the Jupyter page, click on new --> RStudio) and are ready to start working in R in "The Cloud"! `r  fa("cloud", fill ="#5599FF")``r  fa("cloud", fill ="#5599FF")``r  fa("cloud", fill ="#5599FF")`
+
+##### Downloading files from Binder
+After we've finished working on Binder we would like to download the R script that we wrote and any output files (summary tables and figures). We can access those files by using the `files` tab in RStudio (bottom right pane).  
+Select the files/folders that you would like to download and click on `r  fa("cog", fill ="#4383A4")`More `r fa("long-arrow-alt-right")` Export... (see screenshot in `r figs(name="binder_export",display="cite")` below) to save the file on your computer.  
+
+```{r binder_export, echo=FALSE, fig.cap=figs(name="binder_export"), out.width = '75%'}
+knitr::include_graphics("figs/Rstudio_export_screenshot.png")
+```
+
 
 ### Installing R and RStudio locally
 Alternatively, both R and RStudio can be installed locally on any operating system (`r  fa("apple")`, `r  fa("windows",  fill ="#5599FF")`, or `r  fa("linux", )`, see a [detailed tutorial](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu%20)), which provides complete control over the installation, added packages and can be used anywhere without requiring internet connection. This is recommended for anyone who is planning to do any future serious analysis in R (including the assignments in this course).
